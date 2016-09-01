@@ -11,7 +11,7 @@
 		<properties>
 			<property name="javax.persistence.jdbc.show_sql" value="true" />
 			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@SKKOLICH-LAP:1521:XE" />
 			<property name="javax.persistence.jdbc.user" value="DEVELOPER" />
 			<property name="javax.persistence.jdbc.password" value="Kolichala_11" />
 

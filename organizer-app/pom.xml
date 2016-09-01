@@ -24,5 +24,6 @@
 	</build>
 	<modules>
 		<module>organizer-core</module>
+		<module>organizer-ui</module>
 	</modules>
 </project>

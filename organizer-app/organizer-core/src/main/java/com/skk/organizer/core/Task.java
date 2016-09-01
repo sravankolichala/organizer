@@ -17,6 +17,11 @@ import javax.persistence.Table;
 @Table(name="TASK")
 public class Task implements Organizable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -418085757071236808L;
+
 	@Id
 	@Column(name="TASK_ID")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)

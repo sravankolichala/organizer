@@ -70,7 +70,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return this.id + " -> " +this.firstName+ ", " +this.lastName;
+		return " [ id : "+this.id + ", firstName : " +this.firstName+ ", lastName : " +this.lastName+" ]";
 	}
 	
 	public List<Task> getTasks(){

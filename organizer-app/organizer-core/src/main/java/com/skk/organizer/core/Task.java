@@ -38,8 +38,6 @@ public class Task implements Organizable {
 	@JoinColumn(name="TASK_OWNER_ID")
 	private Person person;
 	
-	
-
 	public Person getPerson() {
 		return person;
 	}

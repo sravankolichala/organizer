@@ -13,5 +13,6 @@ public interface PersonDao {
 	public List<Person> listPersons(CriteriaQuery<Object> criteriaQuery);
 	public boolean modifyPerson(Person person);
 	public List<Person> listAllPersons();
+	public Person findById(int personId);
 
 }

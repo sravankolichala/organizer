@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.skk.organizer.core.Person;
 import com.skk.organizer.dao.PersonDao;
 import com.skk.organizer.dao.impl.PersonDaoImpl;
+import com.skk.organizer.service.OrganizerService;
+import com.skk.organizer.service.impl.OrganizerServiceImpl;
 
 @WebServlet(name="organizerServlet", urlPatterns="/organizer", loadOnStartup=1)
 public class OrganizerServlet extends HttpServlet {
@@ -22,9 +24,13 @@ public class OrganizerServlet extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		PersonDao personDaoImpl = new PersonDaoImpl();
+		OrganizerService organizerSvc = OrganizerServiceImpl.getInstance();
 		Person person = new Person("Sravan", "Kolichala");
-		System.out.println(personDaoImpl.insertPerson(person));
+		System.out.println(organizerSvc.insertPerson(person));
+		
+/*		PersonDao personDaoImpl = new PersonDaoImpl();
+		Person person = new Person("Sravan", "Kolichala");
+		System.out.println(personDaoImpl.insertPerson(person));*/
 		super.service(req, resp);
 	}
 	

@@ -10,6 +10,7 @@ public interface OrganizerService {
 	List<Task> getListOfTasksOfGivenPersonId(int personId);
 	List<Task> getListOfTasksOfGivenPerson(Person person);
 	List<Person> getListOfPersonsWithoutTasks();
-	
+	List<String> getPersonNames();
+	boolean insertPerson(Person person);
 
 }

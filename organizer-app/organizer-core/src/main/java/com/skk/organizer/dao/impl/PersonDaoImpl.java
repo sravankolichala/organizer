@@ -18,17 +18,17 @@ import javax.ws.rs.Produces;
 import com.skk.organizer.core.Person;
 import com.skk.organizer.dao.PersonDao;
 
-@Produces
+
 public class PersonDaoImpl implements PersonDao {
 
 	//@PersistenceContext(unitName = "organizer", type = PersistenceContextType.TRANSACTION)
 	EntityManager em;
 
-	
 	public PersonDaoImpl() {
 		super();
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("organizer");
 		em = factory.createEntityManager();
+		System.out.println("PersonDaoImpl class object is created");
 	}
 	
 	@Override

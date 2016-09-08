@@ -15,11 +15,6 @@
 			<version>1.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.skk.organizer</groupId>
-			<artifactId>try-and-see-examples</artifactId>
-			<version>1.0</version>
-		</dependency>
-		<dependency>
 			<!-- Provided by Tomcat, but needed for compilation -->
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>

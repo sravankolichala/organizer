@@ -26,14 +26,13 @@ public class PersonDaoImpl implements PersonDao {
 	//@PersistenceContext(unitName = "organizer", type = persistencecontexttype.extended)
 	EntityManager em;
 	
-	@Inject
-	private ApplicationResources applicationResources;
+
 
 	public PersonDaoImpl() {
 		super();
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("organizer");
 		this.em = factory.createEntityManager();
-		System.out.println("PersonDaoImpl class object is created with EM injected "+em+" ApplicationResources="+applicationResources);
+		System.out.println("PersonDaoImpl class object is created with EM injected "+em);
 	}
 	
 	@Override

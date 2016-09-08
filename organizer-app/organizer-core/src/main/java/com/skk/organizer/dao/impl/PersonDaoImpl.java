@@ -3,6 +3,7 @@ package com.skk.organizer.dao.impl;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -17,18 +18,22 @@ import javax.ws.rs.Produces;
 
 import com.skk.organizer.core.Person;
 import com.skk.organizer.dao.PersonDao;
+import com.skk.organizer.resources.ApplicationResources;
 
 
 public class PersonDaoImpl implements PersonDao {
 
-	//@PersistenceContext(unitName = "organizer", type = PersistenceContextType.TRANSACTION)
+	//@PersistenceContext(unitName = "organizer", type = persistencecontexttype.extended)
 	EntityManager em;
+	
+	@Inject
+	private ApplicationResources applicationResources;
 
 	public PersonDaoImpl() {
 		super();
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("organizer");
-		em = factory.createEntityManager();
-		System.out.println("PersonDaoImpl class object is created");
+		this.em = factory.createEntityManager();
+		System.out.println("PersonDaoImpl class object is created with EM injected "+em+" ApplicationResources="+applicationResources);
 	}
 	
 	@Override

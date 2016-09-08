@@ -9,9 +9,10 @@ import javax.inject.Named;
 import com.skk.organizer.core.Person;
 import com.skk.organizer.core.Task;
 import com.skk.organizer.dao.PersonDao;
+import com.skk.organizer.dao.impl.PersonDaoImpl;
 import com.skk.organizer.service.OrganizerService;
 
-@Named
+//@Named("personDaoImpl")
 @RequestScoped
 public class OrganizerServiceImpl implements OrganizerService {
 	
@@ -24,6 +25,7 @@ public class OrganizerServiceImpl implements OrganizerService {
 
 	private OrganizerServiceImpl() {
 		super();
+		//personDaoImpl = new PersonDaoImpl();
 	}
 
 	@Override
@@ -52,6 +54,7 @@ public class OrganizerServiceImpl implements OrganizerService {
 
 	@Override
 	public boolean insertPerson(Person person) {
+		System.out.println("Service Layer : Insert Person");
 		return personDaoImpl.insertPerson(person);
 	}
 

@@ -1,8 +1,12 @@
+com\skk\organizer\resources\ApplicationResources.class
 com\skk\organizer\dao\TaskDao.class
+com\skk\organizer\service\OrganizerService.class
+com\skk\organizer\service\impl\OrganizerServiceImpl.class
 com\skk\organizer\dao\PersonDao.class
 com\skk\organizer\dao\impl\PersonDaoImpl.class
 com\skk\organizer\core\Organizable.class
 com\skk\organizer\beans\ApplicationBeanFactory.class
 com\skk\organizer\test\CoreTester.class
 com\skk\organizer\core\Task.class
+com\skk\organizer\dao\impl\TaskDaoImpl.class
 com\skk\organizer\core\Person.class

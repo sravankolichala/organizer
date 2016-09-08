@@ -16,6 +16,11 @@ import com.skk.organizer.dao.impl.PersonDaoImpl;
 import com.skk.organizer.service.OrganizerService;
 import com.skk.organizer.service.impl.OrganizerServiceImpl;
 
+import bank.Snippet;
+
+
+
+
 @WebServlet(name="organizerServlet", urlPatterns="/organizer", loadOnStartup=1)
 public class OrganizerServlet extends HttpServlet {
 	
@@ -24,13 +29,16 @@ public class OrganizerServlet extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		OrganizerService organizerSvc = OrganizerServiceImpl.getInstance();
+/*		OrganizerService organizerSvc = OrganizerServiceImpl.getInstance();
 		Person person = new Person("Sravan", "Kolichala");
-		System.out.println(organizerSvc.insertPerson(person));
+		System.out.println(organizerSvc.insertPerson(person));*/
 		
 /*		PersonDao personDaoImpl = new PersonDaoImpl();
 		Person person = new Person("Sravan", "Kolichala");
 		System.out.println(personDaoImpl.insertPerson(person));*/
+		
+		Snippet snippet = new Snippet();
+		System.out.println(snippet.getBank());
 		super.service(req, resp);
 	}
 	

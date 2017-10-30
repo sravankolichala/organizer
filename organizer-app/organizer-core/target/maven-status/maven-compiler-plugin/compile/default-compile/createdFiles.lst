@@ -1,6 +1,7 @@
-com\skk\organizer\core\Organizable.class
-com\skk\organizer\dao\TaskDao.class
-com\skk\organizer\test\CoreTester.class
-com\skk\organizer\core\Task.class
-com\skk\organizer\dao\PersonDao.class
-com\skk\organizer\core\Person.class
+com/skk/organizer/core/Organizable.class
+com/skk/organizer/dao/TaskDao.class
+com/skk/organizer/core/Person.class
+com/skk/organizer/core/Task.class
+com/skk/organizer/test/CoreTester.class
+com/skk/organizer/dao/PersonDao.class
+com/skk/organizer/beans/ApplicationBeanFactory.class

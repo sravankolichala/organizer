@@ -1,2 +1,2 @@
-# organizer
+# Organizer
 Organizer
